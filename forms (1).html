@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="D.css">
+    <script src="D.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Personal Details Form</h2>
+        <form name="D1" onsubmit="saveData(event)">
+            <table>
+                <tr>
+                    <td><label for="t1"><b>First Name:</b></label></td>
+                    <td><input type="text" name="t1" placeholder="First Name" ></td>
+                </tr>
+                <tr>
+                    <td><label for="t2"><b>Last Name:</b></label></td>
+                    <td><input type="text" name="t2" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="t3"><b>Username:</b></label></td>
+                    <td><input type="text" name="t3" placeholder="Username"></td>
+                </tr>
+                <tr>
+                    <td><label for="t4"><b>Password:</b></label></td>
+                    <td><input type="password" name="t4" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><label for="t5"><b>Date of Birth:</b></label></td>
+                    <td><input type="date" name="t5"></td>
+                </tr>
+                <tr>
+                    <td><label for="t6"><b>Email:</b></label></td>
+                    <td><input type="email" name="t6" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="t7"><b>Mobile No:</b></label></td>
+                    <td><input type="text" name="t7" placeholder="Mobile No"></td>
+                </tr>
+                <tr>
+                    <td><label><b>Gender:</b></label></td>
+                    <td>
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                        <input type="radio" name="gender" value="Transgender"> Transgender
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><b>PG Qualification:</b></label></td>
+                    <td>
+                        <input type="radio" name="qualification" value="MCA"> MCA
+                        <input type="radio" name="qualification" value="MBA"> MBA
+                        <input type="radio" name="qualification" value="MSc"> MSc
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hobbies"><b>Hobbies:</b></label></td>
+                    <td>
+                        <select name="hobbies">
+                            <option value="Drawing">Drawing</option>
+                            <option value="Dancing">Dancing</option>
+                            <option value="Cricket">Cricket</option>
+                            <option value="Reading">Reading</option>
+                            <option value="Writing">Writing</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address"><b>Address:</b></label></td>
+                    <td><textarea name="address" id="address" rows="4" placeholder="Enter your address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="imageUpload"><b>Upload Image:</b></label></td>
+                    <td><input type="file" name="userImage" id="imageUpload" accept="image/*"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <button onclick="downloadFile()">Download</button>
+    </div>
+</body>
+</html>

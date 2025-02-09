@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("IMG.JPG");
+    background-repeat: no-repeat;
+    background-size: 100vw 200vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: rgb(173, 152, 152);
+    width: 50%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-spacing: 10px;
+}
+
+td {
+    padding: 8px;
+}
+
+input[type="text"], input[type="password"], input[type="date"], textarea, input[type="file"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: brown;
+}
